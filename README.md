@@ -3,6 +3,7 @@ Route planning web application .
 
 ## Table of Contents
 
+1. [Author](#author)
 1. [Usage](#usage)
 1. [Requirements](#requirements)
 1. [Installing Dependencies](#installing Dependencies)
@@ -24,3 +25,10 @@ Route planning web application .
 3. Save the extra time on the road and save the environment.
 4. Tripia will recommends the best places based on what you like.
 
+## Requirements
+
+- Angular
+- Node
+- Express
+- Grunt
+- Bootstrap
