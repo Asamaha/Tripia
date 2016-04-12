@@ -12,7 +12,7 @@ Route planning web application .
 1. [Roadmap](#roadmap)
 1. [Contributing](#contributing)
 
-## Author:
+## Author :
 
 | Name        | Github           | LinkedIn           |
 | ------------- |:-------------:| -------------:|
@@ -38,7 +38,7 @@ Route planning web application .
 
 ### Yelp API keys
 ```sh
-module.exports = {
+- module.exports = {
  consumer_key: 'YOUR-KEY',
  consumer_secret: 'YOUR-KEY',
  token: 'YOUR-KEY',
@@ -51,8 +51,8 @@ module.exports = {
 From within the root directory:
 
 ```sh
-npm install
-bower install
+- npm install
+- bower install
 ```
 ##### To run the Server
 
@@ -60,8 +60,8 @@ bower install
 
 ### Roadmap
 
-### Contributing
-
 ### Deployment
 
 This project is deployed on Heroku.
+
+### Contributing
