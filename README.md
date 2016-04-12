@@ -11,6 +11,11 @@
 
 ## Author:
 
-| Name        | Github           | LinkedIn  |
-| ------------- |:-------------:| -----:|
+| Name        | Github           | LinkedIn           |
+| ------------- |:-------------:| -------------:|
 | **Adam Samaha**      | https://github.com/Asamaha | https://www.linkedin.com/in/adamsamaha |
+
+
+## Usage
+
+> [Tripia]() is a web application will allow you to plan your routes using a Tripia advisor for doing errands and traveling between multiple stops,Tripia will recommends the best places to eat, drink, sleep and play, along your road trip .Save yourself the trouble of route planning.Save the extra time on the road and save the environment.
