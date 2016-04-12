@@ -56,4 +56,12 @@ bower install
 ```
 ##### To run the Server
 
-- CD into server and run ``` node server.js```
+- ``` node server.js```
+
+### Roadmap
+
+### Contributing
+
+### Deployment
+
+This project is deployed on Heroku.
