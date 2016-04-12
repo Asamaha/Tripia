@@ -1,4 +1,5 @@
 # [Tripia]()
+Route planning web application .
 
 ## Table of Contents
 
@@ -18,4 +19,8 @@
 
 ## Usage
 
-> [Tripia]() is a web application will allow you to plan your routes using a Tripia advisor for doing errands and traveling between multiple stops,Tripia will recommends the best places to eat, drink, sleep and play, along your road trip .Save yourself the trouble of route planning.Save the extra time on the road and save the environment.
+1. Plan your routes using Tripia.
+2. Save yourself the trouble of route planning.
+3. Save the extra time on the road and save the environment.
+4. Tripia will recommends the best places based on what you like.
+
