@@ -5,9 +5,10 @@ Route planning web application .
 
 1. [Author](#author)
 1. [Usage](#usage)
+1. [Yelp API keys](#yelp api keys)
 1. [Requirements](#requirements)
-1. [Installing Dependencies](#installing Dependencies)
 1. [Development](#development)
+1. [Installing Dependencies](#installing dependencies)
 1. [Roadmap](#roadmap)
 1. [Contributing](#contributing)
 
@@ -35,6 +36,16 @@ Route planning web application .
 
 ## Development
 
+### Yelp API keys
+```sh
+module.exports = {
+ consumer_key: 'YOUR-KEY',
+ consumer_secret: 'YOUR-KEY',
+ token: 'YOUR-KEY',
+ token_secret:  'YOUR-KEY',
+ ssl: true
+};
+```
 ### Installing Dependencies
 
 From within the root directory:
