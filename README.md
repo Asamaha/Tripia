@@ -32,3 +32,17 @@ Route planning web application .
 - Express
 - Grunt
 - Bootstrap
+
+## Development
+
+### Installing Dependencies
+
+From within the root directory:
+
+```sh
+npm install
+bower install
+```
+##### To run the Server
+
+- CD into server and run ``` node server.js```
