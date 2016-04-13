@@ -3,7 +3,7 @@ Route planning web application .
 
 ## Table of Contents
 
-1. [Author](#author)
+1. [Developer](#developer)
 1. [Usage](#usage)
 1. [Yelp API keys](#yelp api keys)
 1. [Requirements](#requirements)
@@ -12,12 +12,19 @@ Route planning web application .
 1. [Roadmap](#roadmap)
 1. [Contributing](#contributing)
 
-## Author :
+## Developer :
 
 | Name        | Github           | LinkedIn           |
 | ------------- |:-------------:| -------------:|
 | **Adam Samaha**      | https://github.com/Asamaha | https://www.linkedin.com/in/adamsamaha |
 
+
+## Team
+
+1.Travis Neufeld
+2.Seven Li 
+3.David Tan
+4.Paul Brady
 
 ## Usage
 
