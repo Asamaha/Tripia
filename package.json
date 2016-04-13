@@ -9,7 +9,7 @@
     "npm": "2.7.x"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node server/server.js",
     "postinstall": "bower install && grunt build"
   },
   "repository": {
