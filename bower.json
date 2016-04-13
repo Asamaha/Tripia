@@ -1,7 +1,7 @@
 {
   "name": "tripia",
   "description": "Route planning web application",
-  "main": "server.js",
+  "main": "server/server.js",
   "authors": [
     "Adam Samaha"
   ],
