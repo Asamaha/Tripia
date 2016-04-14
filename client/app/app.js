@@ -10,5 +10,6 @@ angular.module('app', ['autofill-directive', 'app.service'])
     {name: 'Shopping',    value: 'shopping'},
     {name: 'Hotels',      value: 'hotels'}
   ];
-  
+
   }]);
+

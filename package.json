@@ -2,7 +2,7 @@
   "name": "tripia",
   "version": "1.0.0",
   "description": "Route planning web application",
-  "main": "server.js",
+  "main": "server/server.js",
   "private": true,
   "engines": {
     "node": "0.12.x",
