@@ -11,5 +11,22 @@ angular.module('app', ['autofill-directive', 'app.service'])
     {name: 'Hotels',      value: 'hotels'}
   ];
 
-  }]);
+ 
 
+$scope.limitSelections = [
+  {name: 'Top 10', value: 10},
+  {name: 'Top 20', value: 20}
+  ];
+
+  $scope.optionFilter;
+  $scope.limitFilter;
+
+  // initialize the geoCodeNotSuccessful to be used for determining valid continental destination or not
+  $scope.geoCodeNotSuccessful = false;
+
+
+
+
+
+
+   }]);
