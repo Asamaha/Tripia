@@ -1,20 +1,22 @@
 var requestHandler = require('./request-handler');
+var filter = require('./filters/filterGoogle');
 var express = require('express');
 var router = express.Router();
 var path = require('path');
 
 router.post('/search', function(req, res) {
   console.log('(POST "/search") Now searching the Yelp API...');
+  //call the google filter to return only the points along the route that are n distance apart
+  var googleFilterObj = filter(req.body);
 
-  var googleCoords = req.body.waypoints;
-  var distance = req.body.distance;
-  var limit = req.body.limit;
+  var googleCoords = googleFilterObj.filteredCoords;
+  var distance = googleFilterObj.distance;
 
-  requestHandler.performSearch(req, res, googleCoords, distance, limit);
+  requestHandler.performSearch(req, res, googleCoords, distance);
 });
 
-router.get('/main',function (req, res) {
-  res.sendFile(path.join(__dirname,'../client', 'main.html'));
+router.get('/main', function (req, res) {
+  res.sendFile(path.join(__dirname,'/..client', 'main.html'));
 });
 
 router.post('/*', function(req, res) {
