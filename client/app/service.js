@@ -13,4 +13,13 @@ angular.module('app.service', [])
           '</div>';
       return description;
   };
+
+  var attachInstructionText = function(marker, text) {
+    google.maps.event.addListener(marker, 'click', function() {
+      // Open an info window when the marker is clicked on
+      stepDisplay.setContent(text);
+      stepDisplay.open(map, marker);
+    });
+  };
+
 });

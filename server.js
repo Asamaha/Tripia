@@ -7,7 +7,7 @@ var router = require('./server/router');
 var port = process.env.PORT || 3000;
 
 //set dirname to client folder to serve static assets (index.html)
-app.use('/', express.static(__dirname + '/..client'));
+app.use('/', express.static(__dirname + '/client'));
 
 //parses all incoming data from strings to JSON
 app.use(bodyParser.json());
