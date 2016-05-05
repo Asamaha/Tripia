@@ -25,6 +25,16 @@ $scope.limitSelections = [
   $scope.geoCodeNotSuccessful = false;
 
 
+  // geolocation search
+
+  $scope.useCurrentLocation = function(){
+    $('#start').val("Searching for current location...");
+    navigator.geolocation.getCurrentPosition(function(position){
+    $('#start').val([position.coords.latitude, position.coords.longitude]);
+    }, function(){
+    $('#start').val("Error retrieving location.");
+    });
+  };
 
 
 
