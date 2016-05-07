@@ -22,4 +22,10 @@ angular.module('app.service', [])
     });
   };
 
+    var placemarkers = function(places) {
+    //Place each marker on the map
+    for (var i = 0; i < places.length; i++) {
+       setDelay(i, places);
+    }
+
 });
