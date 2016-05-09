@@ -1,4 +1,4 @@
-# [Tripia]()
+# Tripia
 Route planning web application .
 
 ## Table of Contents
