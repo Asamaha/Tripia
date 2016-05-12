@@ -37,6 +37,30 @@ $scope.limitSelections = [
   };
 
 
+// save label selection to scope
+  $scope.chooseFilter = function(option) {
+    $scope.optionFilter = option.value;
+  };
 
+  $scope.chooseLimit = function(limit) {
+    $scope.limitFilter = limit.value;
+  };
+
+  $scope.appendWarningMsg = function(isInvalid) {
+    // invalid message template
+    var pInvalid = angular.element("<p id='warningMsg'/>");
+    pInvalid.text("Please choose two continental locations");
+    // valid message template
+    var pValid = angular.element("<p id='warningMsg'/>");
+    pValid.text("");
+    // check to see if the location entered is invalid
+    // if location is invalid, then append invalid message
+    // else, append a blank message
+    if (isInvalid) {
+      $element.find("main-area").append(pInvalid);
+    } else {
+      $element.find("main-area").append(pValid);
+    }
+  };
 
    }]);
