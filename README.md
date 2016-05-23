@@ -21,10 +21,10 @@ Route planning web application .
 
 ## Team
 
-1.Travis Neufeld
-2.Seven Li 
-3.David Tan
-4.Paul Brady
+1.Adam Samaha
+2.Eihab Shadeed
+3.Dima Kulyk
+
 
 ## Usage
 
