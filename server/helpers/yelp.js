@@ -19,3 +19,30 @@ var Client = function(oauth_config) {
 };
 
 var base_url = "http://api.yelp.com/v2/";
+
+Client.prototype.get = function(resource, params, callback) {
+  return this.oauth.get(
+    base_url + resource + '?' + querystring.stringify(params), 
+    this.oauthToken, 
+    this.oauthTokenSecret, 
+    function(error, data, response) {
+      if(!error) data = JSON.parse(data);
+      callback(error, data, response);
+    }
+  );
+}
+
+/*
+Exampe:
+yelp.search({term: "food", location: "Montreal"}, function(error, data) {});
+*/
+Client.prototype.search = function(params, callback) {
+  return this.get('search', params, callback);
+}
+
+
+
+// @see http://www.yelp.com/developers/documentation/v2/authentication
+module.exports.createClient = function(oauth_config) {
+  return new Client(oauth_config);
+};
