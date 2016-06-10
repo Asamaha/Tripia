@@ -63,4 +63,21 @@ $scope.limitSelections = [
     }
   };
 
+   $scope.submit = function(city) {
+    $scope.geoCodeNotSuccessful = false;  // every time when submit button is pressed, reset the geoCodeNotSuccessful to false
+    $element.find("main-area").empty();   // clear out the warning messages from previous location input
+    console.log("SCOPE ENTIRE: ", $scope.location);
+    var startGeo, endGeo;
+
+    calcRoute();
+
+    function calcRoute() {
+      // New directionsService object to interact with google maps API
+      var directionsService = new google.maps.DirectionsService();
+      // clear markers whenever new search
+      for (var i = 0; i < markerArray.length; i++) {
+        markerArray[i].setMap(null);
+      }
+
+
    }]);
