@@ -4,6 +4,10 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 
+router.get('/main/auth',
+  passport.authenticate('google', { scope: ['https://www.googleapis.com/auth/userinfo.profile'] }),
+  function(req, res){});
+
 router.post('/search', function(req, res) {
   console.log('(POST "/search") Now searching the Yelp API...');
   //call the google filter to return only the points along the route that are n distance apart
@@ -16,7 +20,7 @@ router.post('/search', function(req, res) {
 });
 
 router.get('/main', function (req, res) {
-  res.sendFile(path.join(__dirname,'/..client', 'main.html'));
+  res.sendFile(path.join(__dirname,'/client', 'main.html'));
 });
 
 router.post('/*', function(req, res) {
@@ -29,4 +33,3 @@ router.get('/*', function (req, res) {
 });
 
 module.exports = router;
-
